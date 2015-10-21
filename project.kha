@@ -1,0 +1,44 @@
+{
+	"format": 3,
+	"game": {
+		"name": "Empty",
+		"width": 1200,
+		"height": 800,
+		"antiAliasingSamples": 4
+	},
+	"assets": [
+		{
+			"file": "uvtemplate.png",
+			"name": "uvtemplate",
+			"type": "image"
+		},
+		{
+			"file": "tileMap.png",
+			"name": "tileMap",
+			"type": "image"
+		},
+		{
+			"file": "tileMap128.png",
+			"name": "tileMap128",
+			"type": "image"
+		},
+		{
+			"file": "heightMap.png",
+			"name": "heightMap",
+			"type": "image"
+		}
+	],
+	"rooms": [
+		{
+			"assets": [
+				"uvtemplate",
+				"tileMap",
+				"tileMap128",
+				"heightMap"
+			],
+			"name": "room0",
+			"neighbours": [],
+			"parent": null
+		}
+	]
+}
