@@ -2,6 +2,7 @@ package mesh;
 
 import kha.math.Vector3;
 import texture.GroundHeightData;
+import kha.math.Vector2;
 
 class GroundMaker{
   
@@ -18,7 +19,12 @@ class GroundMaker{
       for (x in 0...sections+1){
 
         vertices.push(x * sectionLength - halfSize);
-        vertices.push(0);
+        vertices.push(heightData.getValue(
+          new Vector2(
+            x / sections,
+            z / sections
+          )
+        ));
         vertices.push(z * sectionLength - halfSize);
 
         normals.push(0);

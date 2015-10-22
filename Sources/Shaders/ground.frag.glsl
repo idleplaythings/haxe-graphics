@@ -145,6 +145,6 @@ void kore() {
   vec4 baseColor = tileBlend(vUV);
   //gl_FragColor = baseColor;
   vec3 normal = vNormal;
-  //gl_FragColor = vec4(normal.x, normal.y, normal.z, 1.0);
-  gl_FragColor = texture2D(tileAtlasSampler, vUV);
+  gl_FragColor = vec4(normal.x, normal.y, normal.z, 1.0);
+  //gl_FragColor = texture2D(tileAtlasSampler, vUV);
 }

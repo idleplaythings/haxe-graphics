@@ -81,8 +81,8 @@ class GroundShaderProgram{
       tileAtlasTextureID,
       TextureAddressing.Clamp,
       TextureAddressing.Clamp,
-      TextureFilter.AnisotropicFilter,
-      TextureFilter.AnisotropicFilter,
+      TextureFilter.PointFilter,
+      TextureFilter.PointFilter,
       MipMapFilter.NoMipFilter
     ); 
 

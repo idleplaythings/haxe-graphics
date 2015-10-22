@@ -10,7 +10,7 @@ class OrthographicCamera {
   private var target:Vector3 = new Vector3(0, 0, 0);
   private var vectorUp:Vector3 = new Vector3(0, 1, 0);
   //zoom is how many pixels should one tile be on screen
-  private var currentZoom:Int = 20;
+  private var currentZoom:Int = 40;
 
   private var projectionViewMatrix:Matrix4;
   private var projectionMatrix:Matrix4;

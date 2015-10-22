@@ -23,9 +23,16 @@
 			"type": "image"
 		},
 		{
-			"file": "heightMap.png",
-			"name": "heightMap",
-			"type": "image"
+			"file": "heightmap.png",
+			"name": "heightmap",
+			"type": "image",
+			"readable": true
+		},
+		{
+			"file": "heightmap1024.png",
+			"name": "heightmap1024",
+			"type": "image",
+			"readable": true
 		}
 	],
 	"rooms": [
@@ -34,7 +41,8 @@
 				"uvtemplate",
 				"tileMap",
 				"tileMap128",
-				"heightMap"
+				"heightmap",
+				"heightmap1024"
 			],
 			"name": "room0",
 			"neighbours": [],

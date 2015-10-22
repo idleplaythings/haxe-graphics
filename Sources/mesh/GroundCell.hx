@@ -17,8 +17,8 @@ class GroundCell{
 
   public function new(position:Vector3, size:Int, program:GroundShaderProgram) {
     this.program = program;
-    this.heightMap = new GroundHeightData(size*size);
-    this.mesh = GroundMaker.getMesh(size, size, this.heightMap);
+    this.heightMap = new GroundHeightData(1024);
+    this.mesh = GroundMaker.getMesh(size, size*3, this.heightMap);
     this.program.link(this.mesh);
     this.tileAtlasImage = new GroundCellTestAtlasTexture(size).getImage();
     
@@ -29,7 +29,7 @@ class GroundCell{
     g4.setIndexBuffer(mesh.getIndexBuffer());
 
     this.program.setModelView(g4, mesh.getModelViewMatrix());
-    this.program.setTileAtlasTexture(g4, this.heightMap.getImage());
+    this.program.setTileAtlasTexture(g4, this.tileAtlasImage);
     
     // Draw!
     g4.drawIndexedVertices();
